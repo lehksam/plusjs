@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!--ssr-styles-->
+    <style>
+ .table-container {
+            max-width: 100%;
+            overflow-x: auto;
+            margin: 2rem auto;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        th {
+            background-color: #1f2937;
+            font-weight: 600;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+        
+        td {
+            color: #374151;
+        }
+        
+        tbody tr:hover {
+            background-color: #f3f4f6;
+        }
+        
+        @media (max-width: 640px) {
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+
+  </head>
+  <body>
+    <div id="app"><!--ssr-outlet--></div>
+    <script type="module" src="/src/convert.js"></script>
+  </body>
+</html>
