@@ -1,5 +1,5 @@
 PlusJS is an ultra lightweight, virtual-DOM free frontend framework.
-# Features
+
 ## Fine-grained reactivity
 Changes to items in an array update only the elements that are directly associated with those items.
 This allows for a near vanilla performance.
